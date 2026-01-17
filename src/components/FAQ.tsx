@@ -34,7 +34,7 @@ function FAQ() {
   return (
     <section className="faq" id="faq">
       <div className="faq__container">
-        <span className="tag">faq_</span>
+        <span className="tag tag--purple">faq_</span>
 
         <h2 className="faq__title">Perguntas Frequentes</h2>
 
@@ -49,46 +49,64 @@ function FAQ() {
                 onClick={() => toggleFaq(index)}
               >
                 <span>{faq.question}</span>
-                <svg
-                  className="faq__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                >
-                  <path
-                    d="M7 1V13M1 7H13"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-              {openIndex === index && (
-                <div className="faq__answer">
-                  <p>{faq.answer}</p>
+                <div className="faq__icon-wrapper">
+                  <svg
+                    className="faq__icon"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    {openIndex === index ? (
+                      <path
+                        d="M1 7H13"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    ) : (
+                      <path
+                        d="M7 1V13M1 7H13"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    )}
+                  </svg>
                 </div>
-              )}
-              <div className="faq__divider"></div>
+              </button>
+              <div className={`faq__answer ${openIndex === index ? 'faq__answer--open' : ''}`}>
+                <p>{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>
 
         <div className="faq__contact">
-          <div className="faq__contact-text">
-            <h3 className="faq__contact-title">Ainda tem dúvidas? Vamos conversar!</h3>
+          <div className="faq__contact-left">
+            <h3 className="faq__contact-title">
+              Ainda tem dúvidas?<br />
+              Vamos conversar.
+            </h3>
             <p className="faq__contact-description">
-              Se você tem alguma dúvida, sugestão ou até mesmo uma reclamação, entre em contato. Queremos te ouvir.
+              Se você tem alguma dúvida, sugestão ou até mesmo uma reclamação, entre em contato.
             </p>
+            <a href="mailto:contato@devclub.com.br" className="faq__contact-btn">
+              Iniciar conversa
+            </a>
           </div>
-          <a href="mailto:contato@devclub.com.br" className="btn btn--primary">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M22 6L12 13L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            Mandar mensagem
-          </a>
+
+          <div className="faq__contact-right">
+            <span className="faq__contact-label">bt-mand...</span>
+            <a href="mailto:contato@devclub.com.br" className="faq__contact-email-btn" aria-label="Mandar mensagem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span>Mandar mensagem</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
