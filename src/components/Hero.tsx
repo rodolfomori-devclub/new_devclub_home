@@ -38,6 +38,8 @@ function Hero() {
       <div className="hero__bg">
         <img src="/figma/nasseryousef_top-down_cinematic_shot_of_a_man_typing_on_a_lapto_c180c6b2-38c9-4681-b62c-bcc4a892ee79.png" alt="" className="hero__bg-image" />
         <div className="hero__overlay"></div>
+        <div className="hero__purple-glow"></div>
+        <div className="hero__purple-glow-right"></div>
       </div>
 
       {/* Grid squares overlay */}

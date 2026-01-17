@@ -11,10 +11,21 @@
   z-index: 0;
 }
 
+.journey__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
 .journey__overlay {
   position: absolute;
   inset: 0;
-  background: var(--black-dark);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 16, 18, 0.6) 0%,
+    rgba(17, 16, 18, 0.9) 100%
+  );
 }
 
 .journey__glow {
