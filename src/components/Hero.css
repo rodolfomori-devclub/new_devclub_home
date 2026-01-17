@@ -67,14 +67,9 @@
   inset: 0;
   z-index: 0;
   background-color: var(--black-dark);
-  background-image: url('/figma/nasseryousef_top-down_cinematic_shot_of_a_man_typing_on_a_lapto_c180c6b2-38c9-4681-b62c-bcc4a892ee79.png');
   background-size: cover;
-  background-position: center right;
+  background-position: center;
   background-repeat: no-repeat;
-}
-
-.hero__bg-image {
-  display: none;
 }
 
 .hero__overlay {
