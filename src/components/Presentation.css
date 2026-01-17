@@ -1,0 +1,293 @@
+.presentation {
+  position: relative;
+  padding: 80px 0;
+  background: var(--black-dark);
+  overflow: hidden;
+}
+
+.presentation::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(114, 26, 231, 0.3) 0%, transparent 60%);
+  top: -300px;
+  left: -300px;
+  pointer-events: none;
+}
+
+.presentation::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(133, 50, 242, 0.25) 0%, transparent 60%);
+  bottom: -200px;
+  right: -200px;
+  pointer-events: none;
+}
+
+.presentation__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 112px;
+}
+
+.presentation__header {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.presentation__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.presentation__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.presentation__logo-icon {
+  width: 62px;
+  height: 62px;
+}
+
+.presentation__logo-text {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 32px;
+  color: var(--white-normal);
+}
+
+.presentation__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.presentation__profile-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--green-normal);
+}
+
+.presentation__profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.presentation__profile-name {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white-dark);
+}
+
+.presentation__profile-role {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 16px;
+  line-height: 155%;
+  color: #721AE7;
+}
+
+/* Students/Avatars section */
+.presentation__students {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.presentation__avatars {
+  display: flex;
+  align-items: center;
+}
+
+.presentation__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--green-normal);
+  object-fit: cover;
+  margin-left: -15px;
+}
+
+.presentation__avatar:first-child {
+  margin-left: 0;
+}
+
+.presentation__avatar--more {
+  background: var(--gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 16px;
+  color: var(--white-light);
+}
+
+.presentation__students-text {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  line-height: 155%;
+  font-weight: 500;
+  color: var(--white-dark);
+  max-width: 211px;
+}
+
+.presentation__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 0;
+}
+
+.presentation__title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 32px;
+  line-height: 115%;
+  color: var(--white-light);
+}
+
+.presentation__title .text-green {
+  color: var(--green-normal);
+}
+
+.presentation__title .text-purple {
+  color: #721AE7;
+}
+
+.presentation__description {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--gray-300);
+  max-width: 729px;
+}
+
+/* Video Section */
+.presentation__video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.presentation__video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 490px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--black-light);
+  box-shadow: 0px 8px 72px 0px rgba(0, 0, 0, 0.3);
+}
+
+.presentation__video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black-light);
+}
+
+.presentation__play-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--green-normal);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--black-dark);
+}
+
+.presentation__play-btn:hover {
+  transform: scale(1.1);
+  background: var(--green-dark);
+}
+
+.presentation__play-btn svg {
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+}
+
+@media (max-width: 1200px) {
+  .presentation__container {
+    padding: 0 40px;
+  }
+
+  .presentation__header {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .presentation__header {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .presentation__right {
+    padding-top: 0;
+  }
+
+  .presentation__title {
+    font-size: 26px;
+  }
+
+  .presentation__description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentation__container {
+    padding: 0 20px;
+  }
+
+  .presentation__title {
+    font-size: 22px;
+  }
+
+  .presentation__description {
+    font-size: 14px;
+  }
+
+  .presentation__video-wrapper {
+    height: 300px;
+  }
+
+  .presentation__play-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .presentation__play-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .presentation__students {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation__students-text {
+    max-width: 100%;
+  }
+}

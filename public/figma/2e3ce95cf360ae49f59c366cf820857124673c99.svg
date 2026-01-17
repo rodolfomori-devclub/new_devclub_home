@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 43067">
+<foreignObject x="-24" y="-24" width="112" height="112"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(12px);clip-path:url(#bgblur_0_38_116_clip_path);height:100%;width:100%"></div></foreignObject><circle id="Ellipse 2471" data-figma-bg-blur-radius="24" cx="32" cy="32" r="31.5" fill="url(#paint0_linear_38_116)" fill-opacity="0.2" stroke="url(#paint1_linear_38_116)"/>
+<path id="Vector" d="M32 24C29.2514 24 26.8251 25.3863 25.3844 27.5H28V29.5H22V23.5H24V25.9994C25.8238 23.5717 28.7276 22 32 22C37.5228 22 42 26.4771 42 32H40C40 27.5817 36.4183 24 32 24ZM24 32C24 36.4183 27.5817 40 32 40C34.7486 40 37.1749 38.6137 38.6156 36.5H36V34.5H42V40.5H40V38.0006C38.1762 40.4283 35.2724 42 32 42C26.4771 42 22 37.5228 22 32H24Z" fill="var(--fill-0, #39D353)"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_38_116_clip_path" transform="translate(24 24)"><circle cx="32" cy="32" r="31.5"/>
+</clipPath><linearGradient id="paint0_linear_38_116" x1="64" y1="32" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+<stop stop-color="#984BFF"/>
+<stop offset="1" stop-color="#5217A0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_38_116" x1="45.8915" y1="-25.7778" x2="-6.26653" y2="-8.34123" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8532F2"/>
+<stop offset="1" stop-color="#8532F2" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

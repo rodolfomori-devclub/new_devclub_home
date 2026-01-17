@@ -1,0 +1,25 @@
+.benefits {
+  background: linear-gradient(90deg, #39D353 0%, #0CAE53 100%);
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.benefits__text {
+  color: #111012;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    padding: 10px 16px;
+  }
+
+  .benefits__text {
+    font-size: 12px;
+  }
+}

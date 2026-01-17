@@ -1,0 +1,115 @@
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(17, 16, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(218, 255, 245, 0.2);
+  padding: 12px 0;
+}
+
+.footer-bar__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bar__logo {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bar__logo-text {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white-normal);
+}
+
+.footer-bar__offer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-bar__discount {
+  background: var(--gradient-purple-bg);
+  border: 1px solid #8532F2;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  line-height: 155%;
+  color: var(--green-normal);
+}
+
+.footer-bar__price {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  line-height: 155%;
+  color: var(--white-light);
+}
+
+.footer-bar__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-normal);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  line-height: 155%;
+  color: var(--black-normal);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-bar__cta:hover {
+  background: var(--green-dark);
+}
+
+.footer-bar__cta-icon {
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bar__cta-icon svg {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 1200px) {
+  .footer-bar__container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bar__container {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .footer-bar__brand {
+    display: none;
+  }
+}

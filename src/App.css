@@ -1,0 +1,24 @@
+@import './styles/animations.css';
+
+.app {
+  min-height: 100vh;
+  background: var(--black-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+}
+
+/* Background decorative grid pattern */
+.grid-pattern {
+  position: absolute;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.grid-pattern line {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 1;
+}

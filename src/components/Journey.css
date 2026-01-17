@@ -1,0 +1,311 @@
+.journey {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background: var(--black-dark);
+}
+
+.journey__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.journey__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--black-dark);
+}
+
+.journey__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(200px);
+  pointer-events: none;
+}
+
+.journey__glow--purple {
+  width: 900px;
+  height: 500px;
+  background: rgba(114, 26, 231, 0.3);
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.journey__glow--green {
+  width: 600px;
+  height: 400px;
+  background: rgba(57, 211, 83, 0.15);
+  bottom: 100px;
+  right: -100px;
+}
+
+.journey__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 112px 60px;
+}
+
+/* Header */
+.journey__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.journey__left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.journey__title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 56px;
+  line-height: 110%;
+  color: var(--white-light);
+  max-width: 607px;
+}
+
+.journey__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.journey__description {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--green-normal);
+}
+
+.journey__description-secondary {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--gray-400);
+}
+
+.journey__certifications {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.journey__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.journey__certifications-text {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 16px;
+  color: var(--white-light);
+}
+
+/* Features */
+.journey__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.journey__feature {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.journey__feature-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.journey__feature-plus {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 24px;
+  color: var(--green-normal);
+}
+
+.journey__feature-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--green-normal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-dark);
+}
+
+.journey__feature-title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--white-light);
+}
+
+.journey__feature-description {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  line-height: 155%;
+  font-weight: 500;
+  color: var(--gray-400);
+}
+
+/* Formations */
+.journey__formations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+.journey__formation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.journey__formation-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--green-normal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-dark);
+}
+
+.journey__formation-title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--white-light);
+}
+
+.journey__formation-description {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  line-height: 155%;
+  font-weight: 500;
+  color: var(--gray-400);
+}
+
+/* Companies */
+.journey__companies {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-top: 40px;
+}
+
+.journey__companies-label {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  color: var(--gray-400);
+  font-weight: 500;
+}
+
+.journey__companies-logos {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.journey__companies-logos img {
+  height: 24px;
+  width: auto;
+  opacity: 0.7;
+  filter: grayscale(100%) brightness(2);
+}
+
+.journey__company-name {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 16px;
+  color: var(--gray-400);
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .journey__container {
+    padding: 80px 40px;
+  }
+
+  .journey__title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .journey__header {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .journey__right {
+    padding-top: 0;
+  }
+
+  .journey__title {
+    font-size: 36px;
+  }
+
+  .journey__features {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .journey__formations {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .journey__companies {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .journey__companies-logos {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey__container {
+    padding: 60px 20px;
+  }
+
+  .journey__title {
+    font-size: 28px;
+  }
+
+  .journey__description {
+    font-size: 18px;
+  }
+
+  .journey__feature-title {
+    font-size: 16px;
+  }
+
+  .journey__formation-title {
+    font-size: 18px;
+  }
+}

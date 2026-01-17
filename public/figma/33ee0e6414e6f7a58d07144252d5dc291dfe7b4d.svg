@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 27678">
+<foreignObject x="-24" y="-24" width="112" height="112"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(12px);clip-path:url(#bgblur_0_38_301_clip_path);height:100%;width:100%"></div></foreignObject><rect id="Rectangle 42526" data-figma-bg-blur-radius="24" x="0.5" y="0.5" width="63" height="63" rx="31.5" fill="url(#paint0_linear_38_301)" fill-opacity="0.2" stroke="url(#paint1_linear_38_301)"/>
+<path id="Vector" d="M32 42C26.4772 42 22 37.5229 22 32C22 26.4772 26.4772 22 32 22C37.5228 22 42 26.4772 42 32C42 37.5229 37.5228 42 32 42ZM32 40C36.4183 40 40 36.4183 40 32C40 27.5817 36.4183 24 32 24C27.5817 24 24 27.5817 24 32C24 36.4183 27.5817 40 32 40ZM28.5 34H34C34.2761 34 34.5 33.7762 34.5 33.5C34.5 33.2239 34.2761 33 34 33H30C28.6193 33 27.5 31.8808 27.5 30.5C27.5 29.1193 28.6193 28 30 28H31V26H33V28H35.5V29.9999H30C29.7239 29.9999 29.5 30.2239 29.5 30.5C29.5 30.7762 29.7239 31 30 31H34C35.3807 31 36.5 32.1193 36.5 33.5C36.5 34.8808 35.3807 36 34 36H33V38H31V36H28.5V34Z" fill="var(--fill-0, #39D353)"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_38_301_clip_path" transform="translate(24 24)"><rect x="0.5" y="0.5" width="63" height="63" rx="31.5"/>
+</clipPath><linearGradient id="paint0_linear_38_301" x1="64" y1="32" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+<stop stop-color="#984BFF"/>
+<stop offset="1" stop-color="#5217A0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_38_301" x1="45.8915" y1="-25.7778" x2="-6.26653" y2="-8.34123" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8532F2"/>
+<stop offset="1" stop-color="#8532F2" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

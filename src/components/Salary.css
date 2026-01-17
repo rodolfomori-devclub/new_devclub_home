@@ -1,0 +1,246 @@
+.salary {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  background: var(--black-dark);
+}
+
+.salary::before {
+  content: '';
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(114, 26, 231, 0.3) 0%, transparent 60%);
+  top: -300px;
+  left: -300px;
+  pointer-events: none;
+}
+
+.salary::after {
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(133, 50, 242, 0.25) 0%, transparent 60%);
+  bottom: -200px;
+  right: -200px;
+  pointer-events: none;
+}
+
+.salary__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 112px;
+}
+
+.salary__content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.salary__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag--salary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  background: linear-gradient(270deg, rgba(152, 75, 255, 0.2) 0%, rgba(82, 23, 160, 0.2) 100%);
+  border: 1px solid #8532F2;
+  border-radius: 4px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  backdrop-filter: blur(12px);
+}
+
+.tag--salary span,
+.tag--salary {
+  background: linear-gradient(90deg, #49EB64 0%, #148527 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.salary__title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 32px;
+  line-height: 115%;
+  margin: 20px 0 16px;
+  color: var(--white-light);
+  max-width: 696px;
+}
+
+.salary__subtitle {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--gray-400);
+  margin-bottom: 40px;
+  max-width: 589px;
+}
+
+.salary__levels {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.salary-level__label {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--white-light);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.salary-level__bar {
+  padding: 16px 24px;
+  border-radius: 4px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+}
+
+.salary-level__bar--gray {
+  width: 344px;
+  background: var(--gray-600);
+}
+
+.salary-level__bar--purple {
+  width: 502px;
+  background: linear-gradient(270deg, #8C35FF 0%, #5300C2 100%);
+}
+
+.salary-level__bar--green {
+  width: 624px;
+  background: linear-gradient(270deg, #49EB64 0%, #148527 100%);
+}
+
+.salary-level__value {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--white-light);
+}
+
+.salary__source {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 12px;
+  line-height: 155%;
+  font-weight: 500;
+  color: var(--gray-400);
+  max-width: 436px;
+}
+
+.salary__right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 60px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.benefit-item__icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  background: var(--green-normal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-dark);
+}
+
+.benefit-item__icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.benefit-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.benefit-item__title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--white-light);
+}
+
+.benefit-item__description {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--gray-400);
+  max-width: 381px;
+}
+
+@media (max-width: 1200px) {
+  .salary__container {
+    padding: 0 40px;
+  }
+
+  .salary-level__bar--purple {
+    width: 400px;
+  }
+
+  .salary-level__bar--green {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .salary__content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .salary__right {
+    padding-top: 0;
+  }
+
+  .salary-level__bar--gray,
+  .salary-level__bar--purple,
+  .salary-level__bar--green {
+    width: 100%;
+    max-width: 624px;
+  }
+}
+
+@media (max-width: 768px) {
+  .salary__container {
+    padding: 0 20px;
+  }
+
+  .salary__title {
+    font-size: 24px;
+  }
+
+  .salary-level__value {
+    font-size: 18px;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+  }
+}

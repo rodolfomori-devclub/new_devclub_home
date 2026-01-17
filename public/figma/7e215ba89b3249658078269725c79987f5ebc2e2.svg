@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Facebook">
+<circle id="Ellipse 41" cx="25" cy="25" r="24.5" stroke="var(--stroke-0, #8532F2)"/>
+<g id="facebook-circle-fill 1" clip-path="url(#clip0_38_816)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M25 15C19.477 15 15 19.477 15 25C15 29.991 18.657 34.128 23.438 34.879V27.89H20.898V25H23.438V22.797C23.438 20.291 24.93 18.907 27.215 18.907C28.309 18.907 29.453 19.102 29.453 19.102V21.562H28.193C26.95 21.562 26.563 22.333 26.563 23.124V25H29.336L28.893 27.89H26.563V34.879C31.343 34.129 35 29.99 35 25C35 19.477 30.523 15 25 15Z" fill="var(--fill-0, #39D353)"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_38_816">
+<rect width="24" height="24" fill="white" transform="translate(13 13)"/>
+</clipPath>
+</defs>
+</svg>

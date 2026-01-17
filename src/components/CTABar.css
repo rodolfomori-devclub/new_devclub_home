@@ -1,0 +1,104 @@
+.cta-bar {
+  background: linear-gradient(90deg, #5BF175 0%, #39D353 100%);
+  padding: 12px 0;
+}
+
+.cta-bar__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cta-bar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta-bar__logo {
+  width: 30px;
+  height: 30px;
+}
+
+.cta-bar__name {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  color: var(--black-dark);
+}
+
+.cta-bar__pricing {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-bar__discount {
+  background: var(--black-dark);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  color: var(--green-normal);
+}
+
+.cta-bar__price {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black-dark);
+}
+
+.cta-bar__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--black-dark);
+  border-radius: 6px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 14px;
+  color: var(--white-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-bar__btn:hover {
+  background: var(--black-normal);
+}
+
+.cta-bar__btn-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--green-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-dark);
+}
+
+@media (max-width: 1200px) {
+  .cta-bar__container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-bar__container {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cta-bar__brand {
+    display: none;
+  }
+
+  .cta-bar__price {
+    font-size: 12px;
+  }
+}

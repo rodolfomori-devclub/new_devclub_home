@@ -1,0 +1,174 @@
+.cta-hero {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  background: #262527;
+}
+
+.cta-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.cta-hero__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.cta-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(17, 16, 18, 0.95) 0%, rgba(17, 16, 18, 0.3) 100%);
+}
+
+.cta-hero__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 112px;
+}
+
+.cta-hero__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(152, 75, 255, 0.2) 0%, rgba(82, 23, 160, 0.2) 100%);
+  border: 1px solid #8532F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  margin-bottom: 20px;
+}
+
+.cta-hero__icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.cta-hero__subtitle {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--green-normal);
+}
+
+.cta-hero__title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 56px;
+  line-height: 110%;
+  color: var(--white-light);
+}
+
+.cta-hero__description {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--gray-300);
+  max-width: 384px;
+  margin-bottom: 16px;
+}
+
+.cta-hero__btn {
+  margin-bottom: 40px;
+}
+
+.cta-hero__btn .btn__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--black-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-normal);
+}
+
+.cta-hero__students {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-hero__avatars {
+  display: flex;
+}
+
+.cta-hero__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--green-normal);
+  overflow: hidden;
+  margin-left: -12px;
+}
+
+.cta-hero__avatar:first-child {
+  margin-left: 0;
+}
+
+.cta-hero__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-hero__students-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cta-hero__students-count {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--green-normal);
+}
+
+.cta-hero__students-text {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  line-height: 155%;
+  font-weight: 500;
+  color: #C8CACC;
+}
+
+@media (max-width: 1200px) {
+  .cta-hero__container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-hero {
+    padding: 60px 0;
+  }
+
+  .cta-hero__container {
+    padding: 0 20px;
+  }
+
+  .cta-hero__title {
+    font-size: 32px;
+  }
+
+  .cta-hero__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cta-hero__icon img {
+    width: 24px;
+    height: 24px;
+  }
+}

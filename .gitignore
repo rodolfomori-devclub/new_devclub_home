@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Figma exports folder (raw downloads)
+/figma/
+
+# Assets folder with problematic filenames
+/public/assets/
+
+# Files with very long names (Windows path limit)
+**/Ao entrar*
+**/Acompanhamento próximo*
+**/Aprenda front-end*
+**/Com formações alinhadas*
+**/Faça parte de um grupo*
+**/Fonte_ GlassDoor*
+**/Mesmo que você*
+**/nasseryousef_a_confident*
+**/nasseryousef_cinematic*
+**/nasseryousef_top_view*
+**/nasseryousef_top-down*
+**/Que está no limite*
+**/Que não pode perder*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+
+# Windows reserved names
+nul
+NUL
+
+# Claude local settings
+.claude/
