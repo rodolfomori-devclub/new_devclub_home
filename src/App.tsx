@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials'
 import Journey from './components/Journey'
 import CTAHero from './components/CTAHero'
 import Festival from './components/Festival'
+import Construa from './components/Construa'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import './App.css'
@@ -28,6 +29,7 @@ function App() {
         <Journey />
         <CTAHero />
         <Festival />
+        <Construa />
         <FAQ />
       </main>
       <Footer />

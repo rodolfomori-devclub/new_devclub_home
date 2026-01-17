@@ -18,7 +18,6 @@ interface AnimatedSectionProps {
   className?: string
   style?: CSSProperties
   threshold?: number
-  as?: keyof JSX.IntrinsicElements
 }
 
 export function AnimatedSection({
@@ -28,8 +27,7 @@ export function AnimatedSection({
   duration = 0.8,
   className = '',
   style = {},
-  threshold = 0.1,
-  as: Component = 'div'
+  threshold = 0.1
 }: AnimatedSectionProps) {
   const { ref, isInView } = useInView({ threshold })
 
@@ -41,13 +39,13 @@ export function AnimatedSection({
   }
 
   return (
-    <Component
-      ref={ref as any}
+    <div
+      ref={ref}
       className={className}
       style={animationStyles}
     >
       {children}
-    </Component>
+    </div>
   )
 }
 
