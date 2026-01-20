@@ -52,3 +52,6 @@ NUL
 
 # Claude local settings
 .claude/
+
+# Institucional folder - reference implementation (do not upload)
+Institucional/

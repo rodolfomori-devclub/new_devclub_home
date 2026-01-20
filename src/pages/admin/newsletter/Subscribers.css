@@ -1,0 +1,11 @@
+/* Subscribers */
+.subscribers__email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white-light);
+}
+
+.subscribers__email svg {
+  color: var(--green-normal);
+}

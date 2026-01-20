@@ -1,31 +1,47 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  const isHomePage = location.pathname === '/'
+
   return (
     <header className="header">
       <div className="header__container container">
-        <a href="/" className="header__logo">
+        <Link to="/" className="header__logo" onClick={closeMenu}>
           <img src="/figma/Group.png" alt="" className="header__logo-icon" />
-        </a>
+        </Link>
 
         <button className="header__menu-toggle" onClick={toggleMenu} aria-label="Menu">
           <span className={`header__hamburger ${isMenuOpen ? 'header__hamburger--open' : ''}`}></span>
         </button>
 
         <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
-          <a href="/" className="header__nav-link">Home</a>
-          <a href="#about" className="header__nav-link">Sobre</a>
-          <a href="#courses" className="header__nav-link">Formações</a>
+          <Link to="/" className="header__nav-link" onClick={closeMenu}>Home</Link>
+          {isHomePage ? (
+            <a href="#about" className="header__nav-link" onClick={closeMenu}>Sobre</a>
+          ) : (
+            <Link to="/#about" className="header__nav-link" onClick={closeMenu}>Sobre</Link>
+          )}
+          {isHomePage ? (
+            <a href="#courses" className="header__nav-link" onClick={closeMenu}>Formações</a>
+          ) : (
+            <Link to="/#courses" className="header__nav-link" onClick={closeMenu}>Formações</Link>
+          )}
           <a href="https://lp.devclub.com.br/mba" className="header__nav-link" target="_blank" rel="noopener noreferrer">MBA</a>
-          <a href="/blog" className="header__nav-link">Blog</a>
-          <a href="/newsletter" className="header__nav-link">Newsletter</a>
+          <Link to="/blog" className="header__nav-link" onClick={closeMenu}>Blog</Link>
+          <Link to="/newsletter" className="header__nav-link" onClick={closeMenu}>Newsletter</Link>
           <a href="https://stars.devclub.com.br" className="header__nav-link" target="_blank" rel="noopener noreferrer">Nossos Alunos</a>
           <a href="https://aulas.devclub.com.br/" className="header__nav-link" target="_blank" rel="noopener noreferrer">Login</a>
         </nav>

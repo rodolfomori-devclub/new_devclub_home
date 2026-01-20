@@ -1,39 +1,57 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Presentation from './components/Presentation'
-import About from './components/About'
-import ForWho from './components/ForWho'
-import Courses from './components/Courses'
-import Salary from './components/Salary'
-import Testimonials from './components/Testimonials'
-import Journey from './components/Journey'
-import CTAHero from './components/CTAHero'
-import Festival from './components/Festival'
-import Construa from './components/Construa'
-import FAQ from './components/FAQ'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import PublicLayout from './layouts/PublicLayout'
+import AdminLayout from './layouts/AdminLayout'
+import ProtectedRoute from './components/common/ProtectedRoute'
+
+// Pages
+import Home from './pages/Home'
+import BlogList from './pages/blog/BlogList'
+import BlogPost from './pages/blog/BlogPost'
+import NewsletterList from './pages/newsletter/NewsletterList'
+import NewsletterPost from './pages/newsletter/NewsletterPost'
+
+// Admin Pages
+import Login from './pages/admin/Login'
+import Dashboard from './pages/admin/Dashboard'
+import PostsList from './pages/admin/posts/PostsList'
+import PostCreate from './pages/admin/posts/PostCreate'
+import CTAsList from './pages/admin/ctas/CTAsList'
+import Subscribers from './pages/admin/newsletter/Subscribers'
+
 import './App.css'
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Hero />
-        <Presentation />
-        <About />
-        <ForWho />
-        <Courses />
-        <Salary />
-        <Testimonials />
-        <Journey />
-        <CTAHero />
-        <Festival />
-        <Construa />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      {/* Public Routes */}
+      <Route path="/" element={<PublicLayout />}>
+        <Route index element={<Home />} />
+        <Route path="blog" element={<BlogList />} />
+        <Route path="blog/:slug" element={<BlogPost />} />
+        <Route path="newsletter" element={<NewsletterList />} />
+        <Route path="newsletter/:slug" element={<NewsletterPost />} />
+      </Route>
+
+      {/* Auth Routes */}
+      <Route path="/admin/login" element={<Login />} />
+
+      {/* Protected Admin Routes */}
+      <Route
+        path="/admin"
+        element={
+          <ProtectedRoute>
+            <AdminLayout />
+          </ProtectedRoute>
+        }
+      >
+        <Route index element={<Dashboard />} />
+        <Route path="posts" element={<PostsList />} />
+        <Route path="posts/create" element={<PostCreate />} />
+        <Route path="posts/edit/:id" element={<PostCreate />} />
+        <Route path="ctas" element={<CTAsList />} />
+        <Route path="newsletter" element={<Subscribers />} />
+      </Route>
+    </Routes>
   )
 }
 
