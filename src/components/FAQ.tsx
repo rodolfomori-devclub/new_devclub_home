@@ -98,7 +98,6 @@ function FAQ() {
           </div>
 
           <div className="faq__contact-right">
-            <span className="faq__contact-label">bt-mand...</span>
             <a href="mailto:contato@devclub.com.br" className="faq__contact-email-btn" aria-label="Mandar mensagem">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

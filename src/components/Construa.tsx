@@ -94,10 +94,26 @@ function Construa() {
           </div>
           <div className="construa__ratings-companies">
             <span className="construa__ratings-label">Alunos contratados por empresas como:</span>
-            <div className="construa__companies">
-              <span className="construa__company-name">Nubank</span>
-              <span className="construa__company-name">CVC</span>
-              <span className="construa__company-name">iFood</span>
+            <div className="construa__companies-carousel">
+              <div className="construa__companies-track">
+                <span className="construa__company-name">TOTVS</span>
+                <span className="construa__company-name">Unimed</span>
+                <span className="construa__company-name">CVC</span>
+                <span className="construa__company-name">iFood</span>
+                <span className="construa__company-name">Nubank</span>
+                <span className="construa__company-name">XP Inc</span>
+                <span className="construa__company-name">Mercado Livre</span>
+                <span className="construa__company-name">Stone</span>
+                {/* Duplicado para loop infinito */}
+                <span className="construa__company-name">TOTVS</span>
+                <span className="construa__company-name">Unimed</span>
+                <span className="construa__company-name">CVC</span>
+                <span className="construa__company-name">iFood</span>
+                <span className="construa__company-name">Nubank</span>
+                <span className="construa__company-name">XP Inc</span>
+                <span className="construa__company-name">Mercado Livre</span>
+                <span className="construa__company-name">Stone</span>
+              </div>
             </div>
           </div>
         </div>

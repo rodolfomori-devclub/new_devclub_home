@@ -100,6 +100,63 @@
   max-width: 900px;
 }
 
+/* Students Section */
+.festival__students {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.festival__avatars {
+  display: flex;
+  align-items: center;
+}
+
+.festival__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid var(--green-normal);
+  object-fit: cover;
+  margin-left: -12px;
+}
+
+.festival__avatar:first-child {
+  margin-left: 0;
+}
+
+.festival__avatar--more {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(57, 211, 83, 0.2);
+  border: 3px solid var(--green-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 18px;
+  color: var(--green-normal);
+  margin-left: -12px;
+}
+
+.festival__students-text {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  color: var(--gray-300);
+}
+
+.festival__students-text strong {
+  color: var(--white-light);
+}
+
+/* Ver Formações Button */
+.festival__btn {
+  margin-top: 32px;
+}
+
 /* Technology Cards */
 .festival__technologies {
   position: relative;
@@ -132,8 +189,8 @@
 }
 
 .festival__tech-image {
-  width: 200px;
-  height: 150px;
+  width: 240px;
+  height: 180px;
   object-fit: contain;
   border-radius: 0;
   border: none;
@@ -151,44 +208,44 @@
   color: var(--gray-400);
 }
 
-/* Positioning tech cards with floating animations */
+/* Positioning tech cards with floating animations - more grouped */
 .festival__tech-card--1 {
   top: 0;
-  left: 15%;
+  left: 18%;
   animation: floatCard 4s ease-in-out infinite;
   animation-delay: 0s;
 }
 
 .festival__tech-card--2 {
-  top: 10%;
-  right: 10%;
+  top: 5%;
+  right: 15%;
   animation: floatCard 4s ease-in-out infinite;
   animation-delay: 0.5s;
 }
 
 .festival__tech-card--3 {
-  top: 40%;
-  left: 35%;
+  top: 35%;
+  left: 38%;
   animation: floatCard 4s ease-in-out infinite;
   animation-delay: 1s;
 }
 
 .festival__tech-card--4 {
-  bottom: 10%;
-  left: 5%;
+  bottom: 15%;
+  left: 10%;
   animation: floatCard 4s ease-in-out infinite;
   animation-delay: 1.5s;
 }
 
 .festival__tech-card--5 {
-  bottom: 5%;
-  right: 15%;
+  bottom: 10%;
+  right: 18%;
   animation: floatCard 4s ease-in-out infinite;
   animation-delay: 2s;
 }
 
 .festival__tech-card--6 {
-  bottom: 0;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -239,6 +296,12 @@
   background: var(--green-dark);
   transform: scale(1.15);
   animation: none;
+}
+
+.festival__cta-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--black-dark);
 }
 
 .festival__cta-icon img {
@@ -302,6 +365,15 @@
 
   .festival__title {
     font-size: 32px;
+  }
+
+  .festival__students {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .festival__students-text {
+    text-align: center;
   }
 
   .festival__tech-grid {
