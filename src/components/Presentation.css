@@ -116,9 +116,9 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 2px solid var(--green-normal);
+  border: 3px solid var(--green-normal);
   object-fit: cover;
-  margin-left: -15px;
+  margin-left: -12px;
 }
 
 .presentation__avatar:first-child {
@@ -126,13 +126,14 @@
 }
 
 .presentation__avatar--more {
-  background: var(--gray-600);
+  background: rgba(57, 211, 83, 0.2);
+  border: 3px solid var(--green-normal);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Aldrich', sans-serif;
-  font-size: 16px;
-  color: var(--white-light);
+  font-size: 18px;
+  color: var(--green-normal);
 }
 
 .presentation__students-text {

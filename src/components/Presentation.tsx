@@ -23,9 +23,9 @@ function Presentation() {
 
             <div className="presentation__students">
               <div className="presentation__avatars">
-                <img src="/figma/DevClub3651.png" alt="" className="presentation__avatar" />
-                <img src="/figma/DevClub3656.png" alt="" className="presentation__avatar" />
-                <img src="/figma/DevClub3667.png" alt="" className="presentation__avatar" />
+                <img src="/assets/testimonial-1.jpg" alt="Ana Silva" className="presentation__avatar" />
+                <img src="/assets/testimonial-2.jpg" alt="Carlos Oliveira" className="presentation__avatar" />
+                <img src="/assets/testimonial-3.jpg" alt="Marina Santos" className="presentation__avatar" />
                 <div className="presentation__avatar presentation__avatar--more">+</div>
               </div>
               <p className="presentation__students-text">
