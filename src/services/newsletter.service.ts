@@ -35,4 +35,8 @@ export const newsletterService = {
     });
     return response.data;
   },
+
+  async removeSubscriber(id: string): Promise<void> {
+    await api.delete(`/newsletter/subscribers/${id}`);
+  },
 };

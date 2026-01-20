@@ -51,9 +51,7 @@ function PostCreate() {
   const [loading, setLoading] = useState(false)
   const [generating, setGenerating] = useState(false)
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<StepTwoData>()
-
-  const watchedContent = watch('content', stepTwoData.content)
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm<StepTwoData>()
 
   // Step 1: Select category and type
   const handleStepOne = (category: PostCategory, creationType: CreationType) => {
@@ -81,11 +79,10 @@ function PostCreate() {
 
     setGenerating(true)
     try {
-      const response = await postsService.generateFromTopic({
+      const post = await postsService.generateFromTopic({
         topic,
         category: stepOneData.category,
       })
-      const post = response.data
       setStepTwoData({
         title: post.title,
         description: post.description,
@@ -111,11 +108,10 @@ function PostCreate() {
 
     setGenerating(true)
     try {
-      const response = await postsService.generateFromFaq({
-        faqs,
+      const post = await postsService.generateFromFaq({
+        questions: faqs,
         category: stepOneData.category,
       })
-      const post = response.data
       setStepTwoData({
         title: post.title,
         description: post.description,
@@ -152,10 +148,10 @@ function PostCreate() {
         category: stepOneData.category,
       }
 
-      const response = await postsService.create(postData)
+      const post = await postsService.create(postData)
 
       if (publish) {
-        await postsService.publish(response.data.id)
+        await postsService.publish(post.id)
       }
 
       navigate('/admin/posts')

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Plus, Edit, Trash2, ExternalLink, X } from 'lucide-react'
 import { useForm } from 'react-hook-form'
 import { ctasService } from '../../../services/ctas.service'
-import { CTA, CreateCTADto } from '../../../types/cta.types'
+import { CTA, CreateCtaDto } from '../../../types/cta.types'
 import './CTAsList.css'
 
 function CTAsList() {
@@ -11,7 +11,7 @@ function CTAsList() {
   const [showModal, setShowModal] = useState(false)
   const [editingCta, setEditingCta] = useState<CTA | null>(null)
 
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<CreateCTADto>()
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<CreateCtaDto>()
 
   useEffect(() => {
     fetchCtas()
@@ -60,7 +60,7 @@ function CTAsList() {
     reset()
   }
 
-  const onSubmit = async (data: CreateCTADto) => {
+  const onSubmit = async (data: CreateCtaDto) => {
     try {
       if (editingCta) {
         await ctasService.update(editingCta.id, data)
