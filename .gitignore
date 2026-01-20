@@ -7,8 +7,9 @@ dist/
 # Figma exports folder (raw downloads)
 /figma/
 
-# Assets folder with problematic filenames
-/public/assets/
+# Assets folder - ignore files with long/problematic names but allow testimonials
+/public/assets/*
+!/public/assets/testimonial-*.jpg
 
 # Files with very long names (Windows path limit)
 **/Ao entrar*

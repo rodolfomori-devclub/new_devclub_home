@@ -35,13 +35,13 @@ function CTAHero() {
         <div className="cta-hero__students">
           <div className="cta-hero__avatars">
             <div className="cta-hero__avatar">
-              <img src="/figma/Ellipse 2466.png" alt="" />
+              <img src="/assets/testimonial-1.jpg" alt="Ana Silva" />
             </div>
             <div className="cta-hero__avatar">
-              <img src="/figma/Ellipse 2467.png" alt="" />
+              <img src="/assets/testimonial-2.jpg" alt="Carlos Oliveira" />
             </div>
             <div className="cta-hero__avatar">
-              <img src="/figma/Ellipse 2468.png" alt="" />
+              <img src="/assets/testimonial-3.jpg" alt="Marina Santos" />
             </div>
           </div>
           <div className="cta-hero__students-info">

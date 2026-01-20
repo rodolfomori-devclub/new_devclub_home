@@ -138,10 +138,26 @@ function Hero() {
           </div>
           <div className="hero__ratings-companies">
             <span className="hero__ratings-label">Alunos contratados por empresas como:</span>
-            <div className="hero__companies">
-              <span className="hero__company-name">TOTVS</span>
-              <span className="hero__company-name">Unimed</span>
-              <span className="hero__company-name">CVC</span>
+            <div className="hero__companies-carousel">
+              <div className="hero__companies-track">
+                <span className="hero__company-name">TOTVS</span>
+                <span className="hero__company-name">Unimed</span>
+                <span className="hero__company-name">CVC</span>
+                <span className="hero__company-name">iFood</span>
+                <span className="hero__company-name">Nubank</span>
+                <span className="hero__company-name">XP Inc</span>
+                <span className="hero__company-name">Mercado Livre</span>
+                <span className="hero__company-name">Stone</span>
+                {/* Duplicado para loop infinito */}
+                <span className="hero__company-name">TOTVS</span>
+                <span className="hero__company-name">Unimed</span>
+                <span className="hero__company-name">CVC</span>
+                <span className="hero__company-name">iFood</span>
+                <span className="hero__company-name">Nubank</span>
+                <span className="hero__company-name">XP Inc</span>
+                <span className="hero__company-name">Mercado Livre</span>
+                <span className="hero__company-name">Stone</span>
+              </div>
             </div>
           </div>
         </div>

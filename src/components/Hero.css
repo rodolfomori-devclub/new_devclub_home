@@ -348,10 +348,33 @@
   color: var(--gray-400);
 }
 
-.hero__companies {
+/* Companies Carousel */
+@keyframes scrollCompanies {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hero__companies-carousel {
+  overflow: hidden;
+  max-width: 400px;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.hero__companies-track {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
+  animation: scrollCompanies 20s linear infinite;
+  width: max-content;
+}
+
+.hero__companies-track:hover {
+  animation-play-state: paused;
 }
 
 .hero__company-name {
@@ -359,6 +382,12 @@
   font-size: 16px;
   color: var(--white-light);
   opacity: 0.8;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.hero__company-name:hover {
+  opacity: 1;
 }
 
 /* Divider Line */
@@ -408,6 +437,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    width: 100%;
+  }
+
+  .hero__companies-carousel {
+    max-width: 100%;
   }
 }
 

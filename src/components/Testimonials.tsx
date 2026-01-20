@@ -2,29 +2,32 @@ import { useState } from 'react'
 import './Testimonials.css'
 
 function Testimonials() {
-  const [activeIndex, setActiveIndex] = useState(1)
+  const [activeIndex, setActiveIndex] = useState(0)
 
   const testimonials = [
     {
-      quote: "O DevClub superou minhas expectativas. Em poucos meses, já estava criando meus primeiros projetos e me sentindo confiante para buscar oportunidades. O suporte e a comunidade são sensacionais.",
-      name: "Mariana Oliveira",
-      role: "Avaliação Google Play",
+      quote: "O DevClub mudou minha vida! Em menos de 6 meses consegui minha primeira vaga como desenvolvedora. A metodologia prática e o suporte dos mentores fazem toda a diferença.",
+      name: "Ana Silva",
+      role: "Desenvolvedora Full Stack",
+      company: "Tech Corp",
       rating: "5.0",
-      avatar: "/figma/Ellipse 2468.png"
+      avatar: "/assets/testimonial-1.jpg"
     },
     {
-      quote: "A área de membros é impecável! Tudo muito organizado, com trilhas claras e fáceis de seguir. Consigo encontrar as aulas e materiais rapidamente, e ainda posso acompanhar meu progresso. Isso fez toda a diferença no meu aprendizado.",
-      name: "Camila Andrade – São Paulo/SP",
-      role: "Avaliação Área de membros",
+      quote: "As aulas ao vivo e os projetos práticos me prepararam para o mercado real. Hoje trabalho com React e Next.js graças ao conhecimento adquirido no DevClub.",
+      name: "Carlos Oliveira",
+      role: "Front-end Developer",
+      company: "StartupXYZ",
       rating: "5.0",
-      avatar: "/figma/Ellipse 2467.png"
+      avatar: "/assets/testimonial-2.jpg"
     },
     {
-      quote: "O DevClub superou minhas expectativas. Em poucos meses, já estava criando meus primeiros projetos e me sentindo confiante para buscar oportunidades. O suporte e a comunidade são sensacionais.",
-      name: "Rafaela Silva",
-      role: "Avaliação Hotmart",
+      quote: "A comunidade do DevClub é incrível! Além do conhecimento técnico, fiz networking valioso que me ajudou a conseguir oportunidades incríveis na minha carreira.",
+      name: "Marina Santos",
+      role: "Back-end Engineer",
+      company: "Big Tech",
       rating: "5.0",
-      avatar: "/figma/Ellipse 2468.png"
+      avatar: "/assets/testimonial-3.jpg"
     }
   ]
 
@@ -57,7 +60,7 @@ function Testimonials() {
                   </div>
                   <div className="testimonial-card__info">
                     <span className="testimonial-card__name">{testimonial.name}</span>
-                    <span className="testimonial-card__role">{testimonial.role}</span>
+                    <span className="testimonial-card__role">{testimonial.role} @ {testimonial.company}</span>
                   </div>
                 </div>
               </div>
