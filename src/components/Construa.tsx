@@ -33,11 +33,7 @@ function Construa() {
                 <img src="/assets/testimonial-1.jpg" alt="Ana Silva" className="construa__avatar" />
                 <img src="/assets/testimonial-2.jpg" alt="Carlos Oliveira" className="construa__avatar" />
                 <img src="/assets/testimonial-3.jpg" alt="Marina Santos" className="construa__avatar" />
-                <div className="construa__avatar construa__avatar--more">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M10 4V16M4 10H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </div>
+                <div className="construa__avatar construa__avatar--more">+</div>
               </div>
               <div className="construa__users-text">
                 <span className="construa__users-count">+55 mil</span> alunos e alunas no Brasil e no mundo. Junte-se a eles.
