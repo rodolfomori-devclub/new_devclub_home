@@ -5,13 +5,22 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Enable CORS - allow all origins
+  // Enable CORS - configure allowed origins from environment
+  const corsOrigins = process.env.CORS_ALLOWED_ORIGINS;
+
+  // Parse origins: if "*" allow all, otherwise split by comma
+  let origin: boolean | string | string[];
+  if (!corsOrigins || corsOrigins === '*') {
+    origin = true; // Allow all origins
+  } else {
+    origin = corsOrigins.split(',').map(o => o.trim());
+  }
+
   app.enableCors({
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    allowedHeaders: '*',
-    preflightContinue: false,
-    optionsSuccessStatus: 204,
+    origin,
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With'],
+    credentials: true,
   });
 
   // Global validation pipe
