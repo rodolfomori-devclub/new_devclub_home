@@ -44,7 +44,7 @@ export class SanityService implements OnModuleInit {
     return this.client.fetch(groqQuery, params);
   }
 
-  // Get published posts
+  // Get published posts (without content for faster loading)
   async getPublishedPosts(category?: string) {
     let query: string;
 
@@ -56,8 +56,7 @@ export class SanityService implements OnModuleInit {
         description,
         "slug": slug.current,
         category,
-        publishedAt,
-        "content": coalesce(content, body)
+        publishedAt
       }`;
     } else if (category === 'newsletter') {
       // Para newsletter: pega apenas posts com category = "newsletter"
@@ -67,8 +66,7 @@ export class SanityService implements OnModuleInit {
         description,
         "slug": slug.current,
         category,
-        publishedAt,
-        "content": coalesce(content, body)
+        publishedAt
       }`;
     } else {
       // Sem filtro: pega todos os posts publicados
@@ -78,8 +76,7 @@ export class SanityService implements OnModuleInit {
         description,
         "slug": slug.current,
         category,
-        publishedAt,
-        "content": coalesce(content, body)
+        publishedAt
       }`;
     }
 

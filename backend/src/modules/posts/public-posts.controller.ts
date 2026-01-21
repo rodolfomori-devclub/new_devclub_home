@@ -22,7 +22,7 @@ export class PublicPostsController {
       console.log('Sanity fetch failed, falling back to Firestore:', error.message);
     }
 
-    // Fallback to Firestore for published posts
+    // Fallback to Firestore for published posts (without content for faster loading)
     const snapshot = await this.firebaseService.postsCollection
       .where('status', '==', PostStatus.PUBLISHED)
       .get();
@@ -36,7 +36,6 @@ export class PublicPostsController {
         description: data.description,
         slug: data.slug,
         category: data.category,
-        content: data.content,
         publishedAt: data.publishedAt,
         createdAt: data.createdAt,
       };
