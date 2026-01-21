@@ -86,34 +86,29 @@ function BlogPost() {
   return (
     <div className="blog-post">
       <div className="blog-post__header">
-        <div className="blog-post__header-bg">
-          <div className="blog-post__header-glow blog-post__header-glow--purple"></div>
-        </div>
-        <div className="container">
-          <Link to="/blog" className="blog-post__back">
-            <ArrowLeft size={18} />
-            Voltar ao Blog
-          </Link>
+        <Link to="/blog" className="blog-post__back">
+          <ArrowLeft size={16} />
+          Voltar ao Blog
+        </Link>
 
-          <div className="blog-post__meta">
-            <span className="blog-post__date">
-              <Calendar size={16} />
-              {format(new Date(post.publishedAt || post.createdAt || new Date()), "dd 'de' MMMM, yyyy", {
-                locale: ptBR,
-              })}
-            </span>
-            <span className="blog-post__read-time">
-              <Clock size={16} />
-              {estimateReadTime(post.content)} min de leitura
-            </span>
-          </div>
-
-          <h1 className="blog-post__title">{post.title}</h1>
-          <p className="blog-post__description">{post.description}</p>
+        <div className="blog-post__meta">
+          <span className="blog-post__date">
+            <Calendar size={14} />
+            {format(new Date(post.publishedAt || post.createdAt || new Date()), "dd 'de' MMMM, yyyy", {
+              locale: ptBR,
+            })}
+          </span>
+          <span className="blog-post__read-time">
+            <Clock size={14} />
+            {estimateReadTime(post.content)} min de leitura
+          </span>
         </div>
+
+        <h1 className="blog-post__title">{post.title}</h1>
+        <p className="blog-post__description">{post.description}</p>
       </div>
 
-      <div className="blog-post__content container">
+      <div className="blog-post__content">
         <article className="blog-post__article">
           <div className="blog-post__markdown">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>

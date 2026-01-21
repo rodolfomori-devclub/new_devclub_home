@@ -53,27 +53,21 @@ function NewsletterList() {
   return (
     <div className="newsletter-page">
       <div className="newsletter-page__hero">
-        <div className="newsletter-page__hero-bg">
-          <div className="newsletter-page__hero-glow newsletter-page__hero-glow--purple"></div>
-          <div className="newsletter-page__hero-glow newsletter-page__hero-glow--green"></div>
-        </div>
-        <div className="container">
-          <span className="tag">Newsletter_</span>
-          <h1 className="newsletter-page__title">
-            Fique por dentro das <span className="text-purple">novidades</span>
-          </h1>
-          <p className="newsletter-page__subtitle">
-            Receba conteúdos exclusivos sobre programação e carreira diretamente no seu email
-          </p>
+        <span className="tag">Newsletter</span>
+        <h1 className="newsletter-page__title">
+          Fique por dentro das <span className="text-purple">novidades</span>
+        </h1>
+        <p className="newsletter-page__subtitle">
+          Receba conteúdos exclusivos sobre programação e carreira diretamente no seu email
+        </p>
 
-          <div className="newsletter-page__subscribe">
-            <Mail size={20} />
-            <span>Inscreva-se na nossa newsletter para receber as edições em primeira mão</span>
-          </div>
+        <div className="newsletter-page__subscribe">
+          <Mail size={18} />
+          <span>Inscreva-se para receber as edições em primeira mão</span>
         </div>
       </div>
 
-      <div className="newsletter-page__content container">
+      <div className="newsletter-page__content">
         {loading ? (
           <div className="newsletter-page__loading">
             <div className="newsletter-page__spinner"></div>

@@ -86,34 +86,29 @@ function NewsletterPost() {
   return (
     <div className="newsletter-post">
       <div className="newsletter-post__header">
-        <div className="newsletter-post__header-bg">
-          <div className="newsletter-post__header-glow newsletter-post__header-glow--purple"></div>
-        </div>
-        <div className="container">
-          <Link to="/newsletter" className="newsletter-post__back">
-            <ArrowLeft size={18} />
-            Voltar à Newsletter
-          </Link>
+        <Link to="/newsletter" className="newsletter-post__back">
+          <ArrowLeft size={16} />
+          Voltar à Newsletter
+        </Link>
 
-          <div className="newsletter-post__meta">
-            <span className="newsletter-post__date">
-              <Calendar size={16} />
-              {format(new Date(post.publishedAt || post.createdAt || new Date()), "dd 'de' MMMM, yyyy", {
-                locale: ptBR,
-              })}
-            </span>
-            <span className="newsletter-post__read-time">
-              <Clock size={16} />
-              {estimateReadTime(post.content)} min de leitura
-            </span>
-          </div>
-
-          <h1 className="newsletter-post__title">{post.title}</h1>
-          <p className="newsletter-post__description">{post.description}</p>
+        <div className="newsletter-post__meta">
+          <span className="newsletter-post__date">
+            <Calendar size={14} />
+            {format(new Date(post.publishedAt || post.createdAt || new Date()), "dd 'de' MMMM, yyyy", {
+              locale: ptBR,
+            })}
+          </span>
+          <span className="newsletter-post__read-time">
+            <Clock size={14} />
+            {estimateReadTime(post.content)} min de leitura
+          </span>
         </div>
+
+        <h1 className="newsletter-post__title">{post.title}</h1>
+        <p className="newsletter-post__description">{post.description}</p>
       </div>
 
-      <div className="newsletter-post__content container">
+      <div className="newsletter-post__content">
         <article className="newsletter-post__article">
           <div className="newsletter-post__markdown">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
