@@ -1,8 +1,13 @@
 import axios from 'axios';
 import { auth } from './firebase';
 
+const getBaseUrl = () => {
+  const url = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+  return url.endsWith('/api') ? url : `${url}/api`;
+};
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3001/api',
+  baseURL: getBaseUrl(),
   headers: {
     'Content-Type': 'application/json',
   },
