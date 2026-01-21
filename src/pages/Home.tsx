@@ -9,11 +9,6 @@ import Journey from '../components/Journey';
 import CTAHero from '../components/CTAHero';
 import Festival from '../components/Festival';
 import Construa from '../components/Construa';
-import Platform from '../components/Platform';
-import Pricing from '../components/Pricing';
-import Content from '../components/Content';
-import Tutors from '../components/Tutors';
-import CTABar from '../components/CTABar';
 import FAQ from '../components/FAQ';
 
 function Home() {
@@ -30,11 +25,6 @@ function Home() {
       <CTAHero />
       <Festival />
       <Construa />
-      <Platform />
-      <Pricing />
-      <Content />
-      <Tutors />
-      <CTABar />
       <FAQ />
     </>
   );
