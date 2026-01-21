@@ -9,12 +9,14 @@ export class SanityService implements OnModuleInit {
   constructor(private configService: ConfigService) {}
 
   onModuleInit() {
+    const isProduction = this.configService.get<string>('NODE_ENV') === 'production';
+
     this.client = createClient({
       projectId: this.configService.get<string>('SANITY_PROJECT_ID'),
       dataset: this.configService.get<string>('SANITY_DATASET') || 'production',
       token: this.configService.get<string>('SANITY_API_TOKEN'),
       apiVersion: '2024-01-01',
-      useCdn: false,
+      useCdn: isProduction, // Use CDN in production for faster reads
     });
   }
 
