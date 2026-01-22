@@ -107,6 +107,22 @@ function NewsletterList() {
             ))}
           </div>
         )}
+
+        {/* CTA Section */}
+        <div className="newsletter-page__cta">
+          <h2 className="newsletter-page__cta-title">Quer aprender mais sobre Programação?</h2>
+          <p className="newsletter-page__cta-description">
+            Você acabou de ganhar 1 hora com a minha equipe para uma call exclusiva! Vamos entender o seu momento e te mostrar o caminho para se tornar um programador de sucesso. Clique no botão abaixo e agende agora mesmo!
+          </p>
+          <a
+            href="https://rodolfomori.typeform.com/to/rQb1MBt5?typeform-source=devclub.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="newsletter-page__cta-button"
+          >
+            Agendar minha call gratuita
+          </a>
+        </div>
       </div>
     </div>
   )

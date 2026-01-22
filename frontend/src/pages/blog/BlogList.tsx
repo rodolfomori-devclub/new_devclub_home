@@ -140,6 +140,22 @@ function BlogList() {
                 </div>
               )}
             </div>
+
+            {/* CTA Section */}
+            <div className="blog-page__cta">
+              <h2 className="blog-page__cta-title">Quer aprender mais sobre Programação?</h2>
+              <p className="blog-page__cta-description">
+                Você acabou de ganhar 1 hora com a minha equipe para uma call exclusiva! Vamos entender o seu momento e te mostrar o caminho para se tornar um programador de sucesso. Clique no botão abaixo e agende agora mesmo!
+              </p>
+              <a
+                href="https://rodolfomori.typeform.com/to/rQb1MBt5?typeform-source=devclub.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="blog-page__cta-button"
+              >
+                Agendar minha call gratuita
+              </a>
+            </div>
           </>
         )}
       </div>
