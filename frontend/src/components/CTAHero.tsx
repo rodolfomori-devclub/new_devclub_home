@@ -4,7 +4,7 @@ function CTAHero() {
   return (
     <section className="cta-hero">
       <div className="cta-hero__bg">
-        <img src="/figma/image 45.png" alt="" className="cta-hero__bg-image" />
+        <img src="/figma/image 45.png" alt="" className="cta-hero__bg-image" loading="eager" />
         <div className="cta-hero__overlay"></div>
       </div>
 

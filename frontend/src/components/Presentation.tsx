@@ -14,7 +14,7 @@ function Presentation() {
             </div>
 
             <div className="presentation__profile">
-              <img src="/figma/DevClub3654.png" alt="Rodolfo Mori" className="presentation__profile-img" />
+              <img src="/figma/DevClub3654.png" alt="Rodolfo Mori" className="presentation__profile-img" loading="eager" />
               <div className="presentation__profile-info">
                 <span className="presentation__profile-name">Rodolfo Mori</span>
                 <span className="presentation__profile-role">Fundador do DevClub</span>

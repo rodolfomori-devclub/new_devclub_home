@@ -4,7 +4,7 @@ function Festival() {
   return (
     <section className="festival" id="festival">
       <div className="festival__bg">
-        <img src="/figma/image 35.png" alt="" className="festival__bg-image" />
+        <img src="/figma/image 35.png" alt="" className="festival__bg-image" loading="eager" />
         <div className="festival__overlay"></div>
         <div className="festival__glow festival__glow--green"></div>
         <div className="festival__glow festival__glow--purple"></div>

@@ -4,7 +4,7 @@ function Construa() {
   return (
     <section className="construa" id="construa">
       <div className="construa__bg">
-        <img src="/figma/image 35.png" alt="" className="construa__bg-image" />
+        <img src="/figma/image 35.png" alt="" className="construa__bg-image" loading="eager" />
         <div className="construa__overlay"></div>
         <div className="construa__glow construa__glow--purple"></div>
         <div className="construa__glow construa__glow--green"></div>

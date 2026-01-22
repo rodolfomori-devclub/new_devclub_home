@@ -69,7 +69,7 @@ function Journey() {
   return (
     <section className="journey" id="journey">
       <div className="journey__bg">
-        <img src="/figma/image 38.png" alt="" className="journey__bg-image" />
+        <img src="/figma/image 38.png" alt="" className="journey__bg-image" loading="eager" />
         <div className="journey__overlay"></div>
         <div className="journey__glow journey__glow--purple"></div>
         <div className="journey__glow journey__glow--green"></div>

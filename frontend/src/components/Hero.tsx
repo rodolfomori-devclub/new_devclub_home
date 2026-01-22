@@ -40,6 +40,8 @@ function Hero() {
           src="/figma/hero-background.png"
           alt=""
           className="hero__bg-image"
+          fetchPriority="high"
+          loading="eager"
         />
         <div className="hero__overlay"></div>
         <div className="hero__purple-glow"></div>
