@@ -9,27 +9,27 @@ function Courses() {
     },
     {
       image: "/figma/card-frontend.svg",
-      title: "Formação Front-end React",
+      title: "Formação Front-end",
       description: "Especialize-se em desenvolvimento front-end moderno com React. Crie interfaces incríveis e aplicações web performáticas."
     },
     {
       image: "/figma/card-backend.svg",
-      title: "Formação Back-end Node.js",
+      title: "Formação Back-end",
       description: "Torne-se um especialista em desenvolvimento back-end com Node.js. Construa APIs robustas e escaláveis."
     },
     {
       image: "/figma/card-mobile.svg",
-      title: "Formação Mobile React Native",
+      title: "Formação Mobile",
       description: "Desenvolva aplicativos móveis nativos para iOS e Android usando React Native."
     },
     {
       image: "/figma/card-mba.svg",
-      title: "Formação completa MBA",
+      title: "MBA e Pós Graduação em Tecnologia",
       description: "Aprofunde seus conhecimentos com a pós-graduação em desenvolvimento FullStack."
     },
     {
       image: "/figma/card-outras.svg",
-      title: "Ver outras formações",
+      title: "A Escola das Profissões do futuro",
       description: "Conheça mais sobre a nossa escola de programação DevClub"
     }
   ]

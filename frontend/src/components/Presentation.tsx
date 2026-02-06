@@ -29,7 +29,7 @@ function Presentation() {
                 <div className="presentation__avatar presentation__avatar--more">+</div>
               </div>
               <p className="presentation__students-text">
-                +55 mil alunos e alunas no Brasil e no mundo. Junte-se a eles.
+                +25 mil alunos e alunas no Brasil e no mundo. Junte-se a eles.
               </p>
             </div>
           </div>

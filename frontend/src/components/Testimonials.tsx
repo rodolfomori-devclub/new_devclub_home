@@ -82,11 +82,11 @@ function Testimonials() {
               <span className="tag tag--purple">depoimentos_</span>
 
               <h2 className="testimonials__title">
-                Quem fez, comprova: mais de 100 avaliações positivas
+                O Resultado comprova: Escola nº1 em Transição de Carreira no 🇧🇷
               </h2>
 
               <p className="testimonials__description">
-                Alunos de todo o Brasil mudaram de vida com o DevClub FullStackPro — e essas histórias falam por si.
+                Alunos de todo o Brasil mudaram de vida com o DevClub.
               </p>
             </div>
           </div>

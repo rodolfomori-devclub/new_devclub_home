@@ -35,21 +35,21 @@ function Salary() {
               <div className="salary-level">
                 <span className="salary-level__label">Junior</span>
                 <div className="salary-level__bar salary-level__bar--gray">
-                  <span className="salary-level__value">R$ 2k - R$4k</span>
+                  <span className="salary-level__value">R$ 4k - R$6k</span>
                 </div>
               </div>
 
               <div className="salary-level">
                 <span className="salary-level__label">Pleno</span>
                 <div className="salary-level__bar salary-level__bar--purple">
-                  <span className="salary-level__value">R$ 4k - R$6k</span>
+                  <span className="salary-level__value">R$ 8k - R$12k</span>
                 </div>
               </div>
 
               <div className="salary-level">
                 <span className="salary-level__label">Senior</span>
                 <div className="salary-level__bar salary-level__bar--green">
-                  <span className="salary-level__value">+ R$ 7k</span>
+                  <span className="salary-level__value">+ R$ 12k até ∞</span>
                 </div>
               </div>
             </div>

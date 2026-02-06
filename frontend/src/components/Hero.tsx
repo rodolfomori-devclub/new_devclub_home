@@ -104,7 +104,7 @@ function Hero() {
         </div>
 
         <div className="hero__content">
-          <span className="tag">bem-vindo_</span>
+          <span className="tag">A Escola das Profissões do Futuro</span>
 
           <h1 className="hero__title">
             Transforme sua carreira com<br />
