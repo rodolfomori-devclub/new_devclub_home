@@ -23,7 +23,7 @@ function CTAHero() {
           Aprenda com uma metodologia prática e conectada às oportunidades reais do mercado.
         </p>
 
-        <a href="#" className="btn btn--primary cta-hero__btn">
+        <a href="#courses" className="btn btn--primary cta-hero__btn">
           <span className="btn__icon">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M1 13L13 1M13 1H1M13 1V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

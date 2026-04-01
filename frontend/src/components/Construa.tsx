@@ -19,7 +19,7 @@ function Construa() {
               Construa sua carreira em tecnologia com o DevClub
             </h2>
 
-            <a href="#" className="btn btn--primary">
+            <a href="#courses" className="btn btn--primary">
               <span className="btn__icon">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M3 7H11M11 7L7 3M11 7L7 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

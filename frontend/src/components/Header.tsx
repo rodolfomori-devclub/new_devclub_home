@@ -47,7 +47,7 @@ function Header() {
         </nav>
 
         <a
-          href="https://api.whatsapp.com/send/?phone=554892195974&text=quero%20me%20matricular&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=5516990482444&text=quero%20me%20matricular&type=phone_number&app_absent=0"
           className="header__cta"
           target="_blank"
           rel="noopener noreferrer"
