@@ -74,8 +74,5 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  },
-  "engines": {
-    "node": ">=22.23.4"
   }
 }
